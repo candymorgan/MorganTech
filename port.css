@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100vh;
+    background-image: url(../img/9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.container1{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #060749;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+header h1{
+    color: white;
+    /* background-color: blue; */
+}
+header ul{
+ display: flex;
+ list-style-type: none;
+ /* background-color: yellow; */
+}
+header ul li{
+    margin-right: 20px;
+    background-color: #12306d;
+    min-width: 120px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+header ul li:hover{
+    background-color: rgb(63, 194, 187);
+    
+    
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+/* marquee{
+    color: yellow;   
+    background: rgba(23, 184, 23, 0.781);
+    word-spacing: 4px;
+    
+} */
+.drop{
+    position: relative;
+    
+}
+.drop-items{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 51px;
+    left: 0;
+
+}
+
+.drop-items a{
+    border: 1px solid white;
+    padding: 15px;
+    
+    
+
+}
+.drop:hover .drop-items{
+    display: flex;
+    background-color: #12306d;
+    cursor: pointer;
+    position: absolute;
+}
+.drop-items a:hover{
+    background-color: yellowgreen;
+}
+
+.brief{
+    height: 300px;
+    width: 700px;
+    position: absolute;
+     top: 50%;
+    left: 30%;
+    text-align: center;
+    color: white;
+    /* border: 4px solid black; */
+    /* background-color: #060749; */
+    /* background-color: aqua; */
+}
+.brief h1, h2{
+    margin-bottom: 25px;
+}
+
+.brief button{
+    padding: 20px;
+    width: 25%;
+    border-radius: 5px;
+    background-color: rgb(45, 154, 197);
+    color: white;
+    border: none;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.fa-home{
+    color: white;
+    margin-right: 4px;
+}
+.fa-spin{
+    color: white;
+}
+.fa-phone{
+    color: white;
+    margin-right: 4px;
+}
+.fa-sort-down{
+    color: white;
+    margin-left: 4px;
+
+}
+.font-icon .fa{
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px 0px 0px 10px;
+}
+.font-icon .fa:hover{
+    background-color: white;
+    color: red;
+}
+.fa-facebook{
+    background-color: #12306d;
+}
+.fa-whatsapp{
+    background-color: green;
+}
+.fa-twitter{
+    background-color: #2e5cb8;
+}
+.fa-instagram{
+    background-color: rgba(212, 21, 21, 0.699);
+}
+
+#p-box{
+    display: grid;
+    grid-auto-columns: 40% 60%;
+    height: 70vh;
+    grid-template-areas: "one two";
+    background-color: wheat;
+    /* border: 4px solid green; */
+    
+}
+.box1{
+    grid-area: "one";
+    background-image: url(../img/8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin: 10% 0 0 30%;
+    border: 1px solid gray;
+    /* background-color: red; */
+
+}
+.box2{
+    grid-area: "two";
+    height: 100%;
+    width: 90%;
+    padding: 65px 10px 20px 0;
+    /* background-color: blue; */
+    /* border: 3px solid magenta; */
+}
+.box2 p{
+    font-size: 18px;
+    margin-top: 25px;
+}
+.btn1{
+    padding: 15px;
+    margin-top: 20px;
+    width: 15%;
+    font-size: 15px;
+    background-color: rgb(45, 154, 197);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#p-box2{
+    display: grid;
+    grid-auto-columns: 60% 40%;
+    height: 70vh;
+    background-color:   rgb(45, 154, 197);
+    grid-template-areas: "col1 col2";
+    /* border: 4px solid green; */
+    
+
+}
+
+.box3{
+    grid-area: "col1";
+    padding: 30px 0 0 20%;
+     /* background-color:yellow; */
+    /* height: 100%;
+    width: 100%; */
+}
+
+.box4{
+    grid-area: "col2";
+    height: 400px;
+    width: 400px;
+    border: 1px solid gray;
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 10% 0 0 10%;
+}
+
+.box3 p{
+    font-size: 18px;
+    margin-top: 25px;
+    color: rgb(167, 212, 230) ;
+}
+.box3 h1{
+    color: white;
+}
+
+.btn2{
+    padding: 15px;
+    margin-top: 20px;
+    width: 15%;
+    font-size: 15px;
+    background-color: white;
+    color:  rgb(16, 106, 141);
+    border: none;
+    border-radius: 5px;
+}
+
+.last-p-box{
+    height: 93vh;
+    background-color: #fffefe;
+    position: relative;
+    
+}
+.f-box{
+    height: 130px;
+    width: 700px;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    /* background-color: lightcoral; */
+}
+.f-box h1, h3{
+    text-align: center;
+    margin-top: 30px;
+}
+.f-box h3{
+    color: gray;
+}
+.box5{
+    height: 550px;
+    width: 500px;
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    /* background-color: lightseagreen; */
+}
+.box6{
+    height: 550px;
+    width: 500px;
+    /* background-color: rgb(37, 178, 32); */
+    position: absolute;
+    top: 18%;
+    left: 35%;
+}
+.box7{
+    height: 550px;
+    width: 500px;
+    /* background-color: rgb(178, 32, 154); */
+    position: absolute;
+    top: 18%;
+    left: 67%;
+}
+.round1{
+    height: 350px;
+    width: 350px;
+    border: 1px solid gray;
+    background-image: url(../img/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 5% 0 0 15%;
+}
+
+.round2{
+    height: 350px;
+    width: 350px;
+    border: 1px solid gray;
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 5% 0 0 15%;
+}
+.round3{
+    height: 350px;
+    width: 350px;
+    border: 1px solid gray;
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 5% 0 0 15%;
+}
+.box-p{
+    height: 50px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 20px;
+    /* background-color: maroon; */
+}
+.box-p p{
+    text-align: center;
+    color: gray;
+}
+.btn3{
+    height: 50px;
+    margin-top: 20px;
+    width: 20%;
+    font-size: 15px;
+    background-color: rgb(45, 154, 197);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+.footer{
+    background-color:  rgb(16, 106, 141);
+    height: 80px;
+    
+}
+.footer p{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+    
+
+
+
+
